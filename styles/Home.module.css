@@ -104,7 +104,7 @@
 }
 
 .banner p {
-    color: #b8b8b8;
+    color: #747373;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -411,6 +411,10 @@
         padding-bottom: 30px;
     }
 
+    .banner {
+        height: 800px;
+    }
+
     .animation img {
         width: 400px;
         height: 200px;
@@ -427,7 +431,7 @@
 
     .profilePic {
         right: -1100px;
-        top: 800px;
+        top: 880px;
     }
 
     .profilePic img {
@@ -466,6 +470,11 @@
     .projimgbx:nth-of-type(11),
     .projimgbx:nth-of-type(12) {
         margin-top: 30px; /* remove top margin of center column */
+    }
+
+    .socialIcon {
+        margin-right:10px;
+        margin-top: 45px;
     }
 }
 
