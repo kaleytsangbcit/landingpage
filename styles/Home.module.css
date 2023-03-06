@@ -7,52 +7,52 @@
     width: 100%;
 }
 
-.seeall{    
-  width: 100%;
-  background-color: rgb(81, 81, 81);
-  padding-bottom: 40px;
-  padding-right: 120px;
-  display: flex;
-  justify-content: flex-end;
+.seeall {
+    width: 100%;
+    background-color: rgb(81, 81, 81);
+    padding-bottom: 40px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .seeall button {
-color: #545454;
-background-color: #c6a7a4;
-font-weight: 700;
-font-size: 20px;
-letter-spacing: 0.8px;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 10px 20px;
-height: 50px;
-border-radius: 5px;
-border: transparent;
+    color: #545454;
+    background-color: #c6a7a4;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: transparent;
 }
 
 .seeall button:hover {
-background-color: transparent;
-color: #c6a7a4;
-border: 3px solid #c6a7a4;
+    background-color: transparent;
+    color: #c6a7a4;
+    border: 3px solid #c6a7a4;
 }
 
 .seeall button a {
-margin: 0;
-text-align: center;
-vertical-align: middle;
-padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
 }
 
 .seeall button svg {
-font-size: 25px;
-margin-left: 10px;
-transition: 0.3s ease-in-out;
-vertical-align: middle;
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    vertical-align: middle;
 }
 
 .seeall button:hover svg {
-margin-left: 25px;
+    margin-left: 25px;
 }
 
 /* Banner Video  */
@@ -221,7 +221,8 @@ margin-left: 25px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start; /* align center column items to top */
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .projimgbx:nth-of-type(2) {
@@ -232,7 +233,6 @@ margin-left: 25px;
 .projimgbx:nth-of-type(7) {
     margin-top: -60px; /* remove top margin of center column */
 }
-
 
 .projimgbx:nth-of-type(10) {
     margin-top: -70px; /* remove top margin of center column */
@@ -320,10 +320,6 @@ margin-left: 25px;
     color: #fff;
 }
 
-
-
-
-
 /* Footer */
 
 .footerCont {
@@ -335,9 +331,9 @@ margin-left: 25px;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer img {
@@ -350,13 +346,13 @@ margin-left: 25px;
     color: #b8b8b8;
     letter-spacing: 0.5px;
     margin-top: 20px;
-    margin-left:40px;
+    margin-left: 40px;
 }
 
 .socialIcon {
     display: inline-block;
-    margin-top:40px;
-    margin-right:40px;
+    margin-top: 40px;
+    margin-right: 40px;
 }
 
 .socialIcon a {
@@ -396,4 +392,86 @@ margin-left: 25px;
 .socialIcon a:hover img {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
         hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+/* Mobile (Iphone XR) */
+
+@media (max-width: 600px) {
+    .main {
+        height: 100%;
+    }
+
+    .seeall button {
+        width: 60%;
+    }
+
+    .animation {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .animation img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .profilePic {
+        right: -1100px;
+        top: 800px;
+    }
+
+    .profilePic img {
+        width: 10%;
+        animation: none;
+        border-radius: 100px;
+    }
+
+    .project {
+        padding: 20px;
+    }
+
+    .projimgbx {
+        width: 100%;
+    }
+
+    .project h2 {
+        font-size: 30px;
+    }
+
+    .project p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .projimgbx:nth-of-type(1),
+    .projimgbx:nth-of-type(2),
+    .projimgbx:nth-of-type(3),
+    .projimgbx:nth-of-type(4),
+    .projimgbx:nth-of-type(5),
+    .projimgbx:nth-of-type(6),
+    .projimgbx:nth-of-type(7),
+    .projimgbx:nth-of-type(8),
+    .projimgbx:nth-of-type(9),
+    .projimgbx:nth-of-type(10),
+    .projimgbx:nth-of-type(11),
+    .projimgbx:nth-of-type(12) {
+        margin-top: 30px; /* remove top margin of center column */
+    }
+}
+
+/* Tablet and iPad Air */
+@media (min-width: 601px) and (max-width: 1000px) {
+    .main {
+        height: 100%;
+    }
 }
