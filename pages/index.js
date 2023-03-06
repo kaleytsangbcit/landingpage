@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function Home() {
     const { scrollYProgress } = useScroll();
-    const x = useTransform(scrollYProgress, [0, 1], [3000, -3000]);
+    const x = useTransform(scrollYProgress, [0, 1], [3000, -6000]);
 
     return (
         <>
