@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    width: 100%;
+    max-width: 100vw;
 }
 
 .seeall {
@@ -34,7 +34,7 @@
 .seeall button:hover {
     background-color: transparent;
     color: #c6a7a4;
-    border: 3px solid #c6a7a4;
+    border: 2px solid #c6a7a4;
 }
 
 .seeall button a {
@@ -397,12 +397,16 @@
 /* Mobile (Iphone XR) */
 
 @media (max-width: 761px) {
+    
     .main {
-        height: 100%;
+        box-sizing: border-box;
+        max-width: 100vw;
+        padding: 0;
+        margin: 0;
     }
 
-    .seeall button {
-        width: 60%;
+    .scrollCont {
+        display: none;
     }
 
     .animation {
@@ -476,11 +480,42 @@
         margin-right:10px;
         margin-top: 45px;
     }
+
+    .seeall {
+        max-width: 100%;
+        background-color: rgb(81, 81, 81);
+        padding-bottom: 40px;
+        padding-right: 120px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .seeall button {
+        font-weight: 500;
+        font-size: 16px;
+        width: 60%;
+        padding:8px;
+    }
+    
+    .seeall button:hover {
+        border: 2px solid #c6a7a4;
+    }
+
+    .seeall button svg {
+        font-size: 20px;
+        margin-left: 8px;
+    }
+
+    .link button {
+        font-weight: 600;
+        font-size: 18px;
+    }
 }
 
 /* Tablet and iPad Air */
 @media (min-width: 761px) and (max-width: 1000px) {
     .main {
         height: 100%;
+        width: 100vw;
     }
 }
